@@ -9,3 +9,5 @@ OAUTH_CONFIG = {
         'scope': ['user_about_me', 'email'],
     },
 }
+
+SECRET = b'mysupersecretkey'
