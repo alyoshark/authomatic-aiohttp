@@ -44,7 +44,7 @@ def login_user(request, provider_id):
     session = yield from get_session(request)
     session['provider_id'] = provider_id
     # session[provider_id] = User.get_uid(provider_id)
-    session[provider_id] = User.get_uid(provider_id)
+    session[provider_id] = provider_id
 
 
 def login_required(func):
